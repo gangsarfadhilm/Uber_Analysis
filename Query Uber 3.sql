@@ -42,15 +42,15 @@ order by 1,5 desc
 ;
 
 
--- select 
---   day_type,
---   efficiency_Category,
---   count(*) total_trip,
---   round(avg(case when duration >0 then duration end),2) as avg_duration_minutes,
---   round(avg(distance_km),2) as avg_distance_km,
---   round(avg(case when duration > 0 then speed_kmh end),2) as avg_speed_kmh
--- from threshold
--- group by 1,2 order by 1,2
+select 
+  day_type,
+  efficiency_Category,
+  count(*) total_trip,
+  round(avg(case when duration >0 then duration end),2) as avg_duration_minutes,
+  round(avg(distance_km),2) as avg_distance_km,
+  round(avg(case when duration > 0 then speed_kmh end),2) as avg_speed_kmh
+from threshold
+group by 1,2 order by 1,2
 
 
 
