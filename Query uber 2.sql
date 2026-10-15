@@ -11,21 +11,21 @@ WITH base_data AS (
 
 )
 
---weekend
+-- weekend
 
--- select start_hour, count(*) as count_trip_weekend
+select start_hour, count(*) as count_trip_weekend
 
--- from base_data
--- where day_type ='weekend'
--- group by 1 order by 1
+from base_data
+where day_type ='weekend'
+group by 1 order by 1
 
---weekday
+-- weekday
 
--- select start_hour, count(*) as count_trip_weekday
+select start_hour, count(*) as count_trip_weekday
 
--- from base_data
--- where day_type ='weekday'
--- group by 1 order by 1
+from base_data
+where day_type ='weekday'
+group by 1 order by 1
 
 -- Top ten dan jam tersibuk
 select 
